@@ -1,9 +1,5 @@
-pandas
-bokeh
-dill
+gunicorn==19.9.0
+requests==2.20.0
 flask
-pip
-simplejson
-pickle
 nltk
 spacy
