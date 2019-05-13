@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <title>RightFit</title>
+    <head>
+        <style>
+            body {background-image: url("/static/background.jpg");
+                  height: 100%;
+                  background-position: center;
+                  }
+
+            #rightfit { text-align:center;
+                        font-size:60px;
+                        font-family:'Arial Black', Gadget, sans-serif;}
+
+            h2 { text-align:center;
+                 font-size:40 px;
+                 color:rgb(255,165,0);
+                 font-family:'Arial Black', Gadget, sans-serif;}
+
+            label.OR {font-size:30px;
+                      color:rgb(255,165,0);
+                      font-family:'Arial Black', Gadget, sans-serif;}
+
+            label.l1 { font-size:30px;
+                       font-family:"Comic Sans MS", cursive, sans-serif;}
+
+            div.input { margin-top: 100px;
+                        margin-left: 200px;
+                        margin-right: 200px;
+                        background-color: rgb(255,255,255,0.8);}
+
+        </style>
+    </head>
+    <body>
+
+        <div class="input" align="center" >
+            <h id="rightfit">Right-Fit</h>
+            <h2>Matching Right Company to Right People</h2>
+            <form id="input" method="post" action="/login">
+                <p>
+                    <label class="l1"> Company Name: </label>
+                    <input type="text" name="target_company" style="height:30px" placeholder="eg.google" >
+                    <button style="font-size:20px"> Go </button>
+                </p>
+            </form>
+            <p>
+                <label class="OR">OR</label>
+            </p>
+            <form id="input" method="get" action="/login">
+                <p>
+                    <label class="l1"> Your Preference: </label>
+                    <input type="text" name="user_input" size="40" style="height:30px" placeholder="eg. I want to work with small people...">
+                    <button style="font-size:20px"> Go </button>
+                </p>
+            </form>
+            <p>
+                <label style="color:rgb(255,255,255,0.0)"> haha </label>
+            </p>
+            <!-- <iframe src="google.html" style="background-color: Snow;" width="1280px" height="400px" ></iframe> -->
+        </div>
+    </body>
+</html>

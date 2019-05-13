@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendation</title>
+    <style>
+        body {background-image: url("/static/background.jpg");
+              height: 100%;
+              background-position: center;
+              }
+        div.input { margin-top: 100px;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                    background-color: rgba(255,255,255,0.8);}
+        h1 {text-align:center;
+            color:rgb(255,165,0);
+            font-size:40px;
+            font-family:"Comic Sans MS", cursive, sans-serif;
+            }
+        h2 {text-align:center;font-size:30px;}
+    </style>
+</head>
+
+<body>
+    <div class="input" align="center" >
+        <h1>The Top 5 recommended Company {{sent}}:</h1>
+        <div class="h2" align="center">
+            <h2># 1 {{c0}}</h2>
+            <h2># 2 {{c1}}</h2>
+            <h2># 3 {{c2}}</h2>
+            <h2># 4 {{c3}}</h2>
+            <h2># 5 {{c4}}</h2>
+        </div>
+        <h3 style="color: rgba(255,255,255,0.0)"> ...  </h3>
+    </div>
+
+    <div align="center">
+        <button onclick="goBack()" style="font-size:24px"> Home </button>
+    </div>
+
+    <script>
+        function goBack() {window.history.back();}
+    </script>
+
+</body>
+</html>

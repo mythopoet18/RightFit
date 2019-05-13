@@ -1,0 +1,9 @@
+pandas
+bokeh
+dill
+flask
+pip
+simplejson
+pickle
+nltk
+spacy

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <title>Company</title>
+    <head>
+        <style>
+            <!--below are for setting the div.row -->
+            * {
+              box-sizing: border-box;padding: 10px;
+            }
+
+            .column {
+              float: left;
+              width: 50%;
+              padding: 10px;
+            }
+
+            /* Clearfix (clear floats) */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            <!--above are for setting the div.row -->
+
+        </style>
+        <style>
+            body {background-image: url("/static/background.jpg");
+                  height: 100%;
+                  background-position: center;
+                  }
+            h1.title {text-align:center;
+                     font-size:40px;
+                     font-family:"Comic Sans MS", cursive, sans-serif;
+                     background-color:rgba(255,165,0,0.6)
+                  }
+        </style>
+    </head>
+    <body>
+        <h1 class='title'> Below are the  WordCloud, Violin Plot and Topic Modeling results. </h1>
+        <!--<div class="row" align="center">
+          <div class="column" style="margin-top: 0px" align="right">
+
+          </div>
+
+          <div class="column" style="margin-top: 10px" align="left">
+
+          </div>
+        </div> -->
+
+        <div align="center">
+            <img src="static/WordClouds/{{company}}_wordcloud.jpg" alt="WordCloud" style="width:30%;background-color: Snow;">
+        </div>
+
+        <div align="center">
+            <iframe src="static/ViolinPlots/{{company}}_Violin.jpg" alt="Violin Plot" style="background-color: Snow;" width='1280' height='450'></iframe>
+        </div>
+
+        <div align="center">
+            <iframe src="static/LDA_plot/{{company}}.html" style="background-color: Snow;" width="1280" height="900" ></iframe>
+        </div>
+
+        <div align="center">
+            <button onclick="goBack()" style="font-size:24px"> Home </button>
+        </div>
+
+        <script>
+            function goBack() {window.history.back();}
+        </script>
+    </body>
+</html>
